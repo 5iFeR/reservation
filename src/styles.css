@@ -38,7 +38,7 @@ input[type="time"]{
   margin-top: 20vh;
   margin-left: 20vh;
   width: 600px;
-  height: 500px;
+  height: auto;
   box-shadow: 10px 10px 14px -1px rgba(0,0,0,0.2);
   -webkit-box-shadow: 10px 10px 14px -1px rgba(0,0,0,0.2);
   -moz-box-shadow: 10px 10px 14px -1px rgba(0,0,0,0.2);
@@ -52,7 +52,7 @@ h1{
 .inputs{
   display: flex;
   flex-direction: column;
- 
+  
 }
 
 .forms_inputs{
@@ -68,9 +68,19 @@ input{
   border: 0;
   border-bottom:1px solid #1A1A1A;
   outline: none;
+  max-width: 200px;
 
 }
 
+
+input:invalid {
+  margin: 0;
+  margin: 10px;
+  border: 0;
+  border-bottom:1px solid #ff0000;
+  outline: none;
+  
+}
 
 .btn{
     appearance: none;
@@ -98,6 +108,7 @@ input{
     width: 30vh;
     will-change: transform;
     font-family: 'Sono', sans-serif;
+    margin-bottom: 10px;
   }
     .btn:disabled {
       pointer-events: none;
@@ -114,3 +125,22 @@ input{
       box-shadow: none;
       transform: translateY(0);
     }
+
+
+    .alert{
+      outline: 1px solid;
+      padding: 5px;
+      margin-top: 5px;
+    }
+
+
+    .error{
+      margin-right: 10px;
+      margin-left: 10px;
+      text-align: left;
+      color:#ff0000;
+      font-size: 10px;
+      width:200px;
+    }
+
+    
