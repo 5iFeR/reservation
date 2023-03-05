@@ -1,10 +1,8 @@
 const { gql } = require("apollo-server");
-const { GraphQLScalarType } = require('graphql');
+
 
 
 const typeDefs = gql`
-  scalar Date
-  scalar Time
   type Reservation {
     id: ID!
     name: String!
@@ -46,3 +44,5 @@ const typeDefs = gql`
 `;
 
 module.exports = { typeDefs };
+
+

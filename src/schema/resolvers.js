@@ -13,7 +13,7 @@ const resolvers = {
       const newReservation = {
         id: String(lastReservationId++),
         ...reservation,
-        archived: false, // set the archived field to a default value
+        archived: false, 
       };
       reservations.push(newReservation);
       return newReservation;

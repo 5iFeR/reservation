@@ -115,6 +115,9 @@ function validateReservation(reservation, reservations) {
   return Object.keys(errors).length > 0 ? errors : null;
 }
 
+
+
+
 function ReservationForm() {
   const [name, setName] = useState("");
   const [lname, setLname] = useState("");
@@ -294,8 +297,8 @@ function ReservationForm() {
                     date,
                     startTime: parseInt(startTime),
                     endTime: parseInt(endTime),
-                    adults: parseInt(adults), // Ensure the variable is an integer
-                    kids: parseInt(kids), // Ensure the variable is an integer
+                    adults: parseInt(adults), 
+                    kids: parseInt(kids), 
                     tables: parseInt(tables),
                   },
                 },
